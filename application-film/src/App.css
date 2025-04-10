@@ -1,0 +1,215 @@
+/* --- Global Styles --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+/* --- Navbar Style --- */
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-link {
+  color: white;  /* Texte en blanc pour tous les liens */
+  text-decoration: none;
+  cursor: pointer;
+  padding: 5px 10px; /* Ajout d'un peu de padding pour rendre le lien plus "clickable" */
+  border-radius: 4px; /* Arrondir les bords des liens */
+  transition: background-color 0.3s ease; /* Animation de transition lors du survol */
+}
+
+/* Lorsque l'utilisateur survole un lien, le fond devient légèrement plus clair */
+.navbar-link:hover {
+  color: #f0f0f0;
+  background-color: #555;
+}
+
+/* --- Dropdown Menu --- */
+.navbar-link {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #444;
+  padding: 10px;
+  list-style: none;
+  border-radius: 4px;
+  display: block; /* Affichage du menu si la condition est vraie */
+  z-index: 999; /* Assurez-vous que le menu déroulant est toujours au-dessus des autres éléments */
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+}
+
+.dropdown-menu li:hover {
+  background-color: #555;
+}
+
+/* --- Responsive --- */
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    display: block;
+    text-align: center;
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+  }
+}
+
+
+/* --- Search Bar Styles --- */
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin: 20px 0;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #ff6347;
+}
+
+/* --- Film List Styles --- */
+.film-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.film-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.film-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.film-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.film-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.film-card p {
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.film-card .favorite-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.film-card .fav-filled,
+.film-card .fav-empty {
+  font-size: 24px;
+  color: #ff6347;
+}
+
+.film-card .fav-empty {
+  color: #ccc;
+}
+
+.film-card .detail-btn {
+  display: inline-block;
+  background-color: #ff6347;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.film-card .detail-btn:hover {
+  background-color: #e53e3e;
+}
+
+/* --- Button Styles --- */
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+  .navbar-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .film-list {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar-logo {
+    font-size: 20px;
+  }
+
+  input[type="text"] {
+    max-width: 100%;
+  }
+
+  .navbar-link {
+    font-size: 14px;
+  }
+}

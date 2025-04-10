@@ -1,0 +1,44 @@
+{
+  "films": [
+    {
+      "id": 1,
+      "title": "Inception",
+      "category": "Action",
+      "description": "Un thriller de science-fiction où un voleur spécialisé dans l'extraction d'informations secrètes à partir des rêves se voit proposer une mission qui pourrait effacer son passé criminel.",
+      "image": "/images/inception.png",
+      "rating": 4.8
+    },
+    {
+      "id": 2,
+      "title": "The Hangover",
+      "category": "Comédie",
+      "description": "Trois amis se réveillent après une nuit de fête à Las Vegas sans aucun souvenir de ce qui s'est passé, et doivent reconstituer les événements pour retrouver leur ami disparu.",
+      "image": "/images/hangover.png",
+      "rating": 4.3
+    },
+    {
+      "id": 3,
+      "title": "The Pursuit of Happyness",
+      "category": "Drame",
+      "description": "L'histoire vraie d'un homme qui lutte contre la pauvreté et les défis de la vie pour offrir à son fils une meilleure vie, malgré les difficultés énormes qu'il rencontre.",
+      "image": "/images/pursuit_of_happyness.png",
+      "rating": 4.7
+    },
+    {
+      "id": 4,
+      "title": "The Dark Knight",
+      "category": "Action",
+      "description": "Batman affronte le Joker, un criminel psychopathe qui menace de plonger Gotham City dans le chaos. Une lutte épique entre le bien et le mal s'ensuit.",
+      "image": "/images/dark_knight.png",
+      "rating": 4.9
+    },
+    {
+      "id": 5,
+      "title": "La La Land",
+      "category": "Romance",
+      "description": "Un musicien de jazz et une actrice en herbe tombent amoureux à Los Angeles, mais leurs carrières respectives menacent de les séparer.",
+      "image": "/images/la_la_land.png",
+      "rating": 4.6
+    }
+  ]
+}
